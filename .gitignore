@@ -29,6 +29,7 @@ logs/
 
 # Local secrets and environment overrides
 .env
+appsettings.development.json
 .env.*
 appsettings.*.local.json
 appsettings.Local.json
