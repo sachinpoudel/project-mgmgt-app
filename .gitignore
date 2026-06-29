@@ -1,0 +1,49 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio / .NET tooling
+.vs/
+.vscode/
+TestResults/
+*.user
+*.userosscache
+*.suo
+*.rsuser
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs and runtime files
+*.log
+logs/
+*.pid
+*.pid.lock
+
+# Local secrets and environment overrides
+.env
+.env.*
+appsettings.*.local.json
+appsettings.Local.json
+
+# Coverage and profiling artifacts
+coverage/
+*.coverage
+*.coveragexml
+*.prof
+*.snapshot
+
+# EF Core and package restore caches
+*.nupkg
+packages/
+
+# Misc generated files
+.cache/
+.sass-cache/

@@ -1,0 +1,134 @@
+# Details
+
+Date : 2026-06-29 17:58:14
+
+Directory /media/storage/Desktop/mvc-dotnet
+
+Total : 119 files,  11766 codes, 66 comments, 1714 blanks, all 13546 lines
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
+
+## Files
+| filename | language | code | comment | blank | total |
+| :--- | :--- | ---: | ---: | ---: | ---: |
+| [Controller/AuthController.cs](/Controller/AuthController.cs) | C# | 48 | 0 | 9 | 57 |
+| [Controller/MemberController.cs](/Controller/MemberController.cs) | C# | 48 | 0 | 11 | 59 |
+| [Controller/ProjectController.cs](/Controller/ProjectController.cs) | C# | 83 | 0 | 16 | 99 |
+| [Controller/ProjectTaskController.cs](/Controller/ProjectTaskController.cs) | C# | 7 | 0 | 5 | 12 |
+| [Controller/TestController.cs](/Controller/TestController.cs) | C# | 8 | 0 | 1 | 9 |
+| [Data/AppDbContext.cs](/Data/AppDbContext.cs) | C# | 18 | 0 | 11 | 29 |
+| [Data/Configuration/LogConfiguration.cs](/Data/Configuration/LogConfiguration.cs) | C# | 17 | 0 | 4 | 21 |
+| [Data/Configuration/ProjectConfiguration.cs](/Data/Configuration/ProjectConfiguration.cs) | C# | 21 | 0 | 9 | 30 |
+| [Data/Configuration/ProjectMemeberConfiguration.cs](/Data/Configuration/ProjectMemeberConfiguration.cs) | C# | 17 | 0 | 9 | 26 |
+| [Data/Configuration/ProjectTaskConfiguration.cs](/Data/Configuration/ProjectTaskConfiguration.cs) | C# | 24 | 0 | 7 | 31 |
+| [Data/Configuration/TaskAttachmentsConfigurations.cs](/Data/Configuration/TaskAttachmentsConfigurations.cs) | C# | 20 | 0 | 4 | 24 |
+| [Data/Configuration/TaskCommentConfiguration.cs](/Data/Configuration/TaskCommentConfiguration.cs) | C# | 17 | 0 | 7 | 24 |
+| [Data/Configuration/UserConfiguration.cs](/Data/Configuration/UserConfiguration.cs) | C# | 28 | 0 | 13 | 41 |
+| [Dtos/Auth/LoginDto.cs](/Dtos/Auth/LoginDto.cs) | C# | 15 | 0 | 4 | 19 |
+| [Dtos/Auth/RegisterDto.cs](/Dtos/Auth/RegisterDto.cs) | C# | 22 | 0 | 6 | 28 |
+| [Dtos/Auth/UserDto.cs](/Dtos/Auth/UserDto.cs) | C# | 14 | 0 | 2 | 16 |
+| [Dtos/Auth/UserShortDto.cs](/Dtos/Auth/UserShortDto.cs) | C# | 10 | 0 | 1 | 11 |
+| [Dtos/Member/CreateMemberDto.cs](/Dtos/Member/CreateMemberDto.cs) | C# | 11 | 0 | 3 | 14 |
+| [Dtos/Member/IncomingRoleDto.cs](/Dtos/Member/IncomingRoleDto.cs) | C# | 6 | 0 | 2 | 8 |
+| [Dtos/Member/MemberResponseDto.cs](/Dtos/Member/MemberResponseDto.cs) | C# | 11 | 0 | 3 | 14 |
+| [Dtos/Project/AddMemberToProjectDto.cs](/Dtos/Project/AddMemberToProjectDto.cs) | C# | 11 | 0 | 2 | 13 |
+| [Dtos/Project/CreateProjectDto.cs](/Dtos/Project/CreateProjectDto.cs) | C# | 18 | 1 | 5 | 24 |
+| [Dtos/Project/ProjectActivityDto.cs](/Dtos/Project/ProjectActivityDto.cs) | C# | 9 | 0 | 3 | 12 |
+| [Dtos/Project/ProjectDetailDto.cs](/Dtos/Project/ProjectDetailDto.cs) | C# | 22 | 0 | 1 | 23 |
+| [Dtos/Project/ProjectListDto.cs](/Dtos/Project/ProjectListDto.cs) | C# | 18 | 0 | 4 | 22 |
+| [Dtos/Project/ProjectMemberDto.cs](/Dtos/Project/ProjectMemberDto.cs) | C# | 13 | 0 | 2 | 15 |
+| [Dtos/Project/ProjectMemberShortDto.cs](/Dtos/Project/ProjectMemberShortDto.cs) | C# | 12 | 0 | 6 | 18 |
+| [Dtos/Project/ProjectStatsDto.cs](/Dtos/Project/ProjectStatsDto.cs) | C# | 12 | 0 | 1 | 13 |
+| [Dtos/Project/UpdateProjectDto.cs](/Dtos/Project/UpdateProjectDto.cs) | C# | 14 | 0 | 3 | 17 |
+| [Dtos/ProjectTask/CreateTaskDto.cs](/Dtos/ProjectTask/CreateTaskDto.cs) | C# | 16 | 0 | 3 | 19 |
+| [Dtos/ProjectTask/TaskListDto.cs](/Dtos/ProjectTask/TaskListDto.cs) | C# | 17 | 0 | 6 | 23 |
+| [Enums/MemberRole.cs](/Enums/MemberRole.cs) | C# | 7 | 0 | 2 | 9 |
+| [Enums/ProjectStatus.cs](/Enums/ProjectStatus.cs) | C# | 9 | 0 | 2 | 11 |
+| [Enums/ProjectTaskStatus.cs](/Enums/ProjectTaskStatus.cs) | C# | 9 | 0 | 2 | 11 |
+| [Enums/TaskPriority.cs](/Enums/TaskPriority.cs) | C# | 8 | 0 | 1 | 9 |
+| [Enums/UserRole.cs](/Enums/UserRole.cs) | C# | 6 | 0 | 1 | 7 |
+| [Exceptions/AppException.cs](/Exceptions/AppException.cs) | C# | 11 | 0 | 4 | 15 |
+| [Exceptions/BadRequestException.cs](/Exceptions/BadRequestException.cs) | C# | 6 | 0 | 2 | 8 |
+| [Exceptions/ConflictException.cs](/Exceptions/ConflictException.cs) | C# | 8 | 0 | 2 | 10 |
+| [Exceptions/ForbiddenException.cs](/Exceptions/ForbiddenException.cs) | C# | 5 | 0 | 2 | 7 |
+| [Exceptions/GlobalException.cs](/Exceptions/GlobalException.cs) | C# | 53 | 0 | 12 | 65 |
+| [Exceptions/NotFoundException.cs](/Exceptions/NotFoundException.cs) | C# | 9 | 0 | 6 | 15 |
+| [Exceptions/OperationFailedException.cs](/Exceptions/OperationFailedException.cs) | C# | 5 | 0 | 2 | 7 |
+| [Exceptions/UnAuthorizedException.cs](/Exceptions/UnAuthorizedException.cs) | C# | 5 | 0 | 1 | 6 |
+| [Exceptions/ValidationException.cs](/Exceptions/ValidationException.cs) | C# | 5 | 0 | 2 | 7 |
+| [Extensions/ClaimsPrincipalExtensions.cs](/Extensions/ClaimsPrincipalExtensions.cs) | C# | 15 | 0 | 6 | 21 |
+| [Extensions/DistributedCacheExtension.cs](/Extensions/DistributedCacheExtension.cs) | C# | 69 | 0 | 11 | 80 |
+| [Extensions/MiddlewareExtension.cs](/Extensions/MiddlewareExtension.cs) | C# | 9 | 0 | 3 | 12 |
+| [Extensions/RateLimitingExtension.cs](/Extensions/RateLimitingExtension.cs) | C# | 41 | 2 | 6 | 49 |
+| [Extensions/ServiceCollectionExtension.cs](/Extensions/ServiceCollectionExtension.cs) | C# | 35 | 0 | 7 | 42 |
+| [Middleware/RequestLoggingMiddleware.cs](/Middleware/RequestLoggingMiddleware.cs) | C# | 15 | 0 | 5 | 20 |
+| [Migrations/20260617064326\_Init.Designer.cs](/Migrations/20260617064326_Init.Designer.cs) | C# | 376 | 2 | 147 | 525 |
+| [Migrations/20260617064326\_Init.cs](/Migrations/20260617064326_Init.cs) | C# | 306 | 3 | 30 | 339 |
+| [Migrations/20260618084458\_Ini1t.Designer.cs](/Migrations/20260618084458_Ini1t.Designer.cs) | C# | 378 | 2 | 148 | 528 |
+| [Migrations/20260618084458\_Ini1t.cs](/Migrations/20260618084458_Ini1t.cs) | C# | 24 | 3 | 4 | 31 |
+| [Migrations/20260618112212\_Init3.Designer.cs](/Migrations/20260618112212_Init3.Designer.cs) | C# | 378 | 2 | 148 | 528 |
+| [Migrations/20260618112212\_Init3.cs](/Migrations/20260618112212_Init3.cs) | C# | 30 | 3 | 6 | 39 |
+| [Migrations/20260619142244\_InitialCreate4.Designer.cs](/Migrations/20260619142244_InitialCreate4.Designer.cs) | C# | 398 | 2 | 148 | 548 |
+| [Migrations/20260619142244\_InitialCreate4.cs](/Migrations/20260619142244_InitialCreate4.cs) | C# | 383 | 3 | 52 | 438 |
+| [Migrations/20260624142125\_FixProjectMemberRelationship.Designer.cs](/Migrations/20260624142125_FixProjectMemberRelationship.Designer.cs) | C# | 397 | 2 | 148 | 547 |
+| [Migrations/20260624142125\_FixProjectMemberRelationship.cs](/Migrations/20260624142125_FixProjectMemberRelationship.cs) | C# | 29 | 3 | 6 | 38 |
+| [Migrations/20260625141123\_jjj.Designer.cs](/Migrations/20260625141123_jjj.Designer.cs) | C# | 397 | 2 | 148 | 547 |
+| [Migrations/20260625141123\_jjj.cs](/Migrations/20260625141123_jjj.cs) | C# | 84 | 3 | 20 | 107 |
+| [Migrations/AppDbContextModelSnapshot.cs](/Migrations/AppDbContextModelSnapshot.cs) | C# | 395 | 1 | 148 | 544 |
+| [Models/BaseEntity.cs](/Models/BaseEntity.cs) | C# | 11 | 0 | 2 | 13 |
+| [Models/Project.cs](/Models/Project.cs) | C# | 16 | 2 | 6 | 24 |
+| [Models/ProjectMembers.cs](/Models/ProjectMembers.cs) | C# | 14 | 0 | 4 | 18 |
+| [Models/ProjectTask.cs](/Models/ProjectTask.cs) | C# | 28 | 0 | 14 | 42 |
+| [Models/TaskAttachments.cs](/Models/TaskAttachments.cs) | C# | 15 | 0 | 4 | 19 |
+| [Models/TaskComment.cs](/Models/TaskComment.cs) | C# | 11 | 0 | 5 | 16 |
+| [Models/TimeLog.cs](/Models/TimeLog.cs) | C# | 13 | 0 | 6 | 19 |
+| [Models/User.cs](/Models/User.cs) | C# | 29 | 0 | 12 | 41 |
+| [Program.cs](/Program.cs) | C# | 108 | 0 | 19 | 127 |
+| [Properties/launchSettings.json](/Properties/launchSettings.json) | JSON | 23 | 0 | 1 | 24 |
+| [Repositories/Cache/MemberCacheRepository.cs](/Repositories/Cache/MemberCacheRepository.cs) | C# | 44 | 0 | 14 | 58 |
+| [Repositories/Cache/ProjectCacheRepository.cs](/Repositories/Cache/ProjectCacheRepository.cs) | C# | 84 | 0 | 16 | 100 |
+| [Repositories/Cache/UserCacheRepository.cs](/Repositories/Cache/UserCacheRepository.cs) | C# | 44 | 2 | 15 | 61 |
+| [Repositories/Interface/IMemberRepository.cs](/Repositories/Interface/IMemberRepository.cs) | C# | 14 | 0 | 3 | 17 |
+| [Repositories/Interface/IProjectRepository.cs](/Repositories/Interface/IProjectRepository.cs) | C# | 16 | 0 | 4 | 20 |
+| [Repositories/Interface/IProjectTaskRepository.cs](/Repositories/Interface/IProjectTaskRepository.cs) | C# | 14 | 0 | 4 | 18 |
+| [Repositories/Interface/IUserRepository.cs](/Repositories/Interface/IUserRepository.cs) | C# | 12 | 0 | 3 | 15 |
+| [Repositories/MemberRepository.cs](/Repositories/MemberRepository.cs) | C# | 48 | 0 | 12 | 60 |
+| [Repositories/ProjectRepository.cs](/Repositories/ProjectRepository.cs) | C# | 70 | 6 | 24 | 100 |
+| [Repositories/ProjectTaskRepository.cs](/Repositories/ProjectTaskRepository.cs) | C# | 59 | 0 | 13 | 72 |
+| [Repositories/UserRepository.cs](/Repositories/UserRepository.cs) | C# | 68 | 1 | 16 | 85 |
+| [Services/Interfaces/IMemberService.cs](/Services/Interfaces/IMemberService.cs) | C# | 12 | 0 | 3 | 15 |
+| [Services/Interfaces/IProjectService.cs](/Services/Interfaces/IProjectService.cs) | C# | 16 | 1 | 4 | 21 |
+| [Services/Interfaces/IProjectTaskService.cs](/Services/Interfaces/IProjectTaskService.cs) | C# | 10 | 0 | 7 | 17 |
+| [Services/Interfaces/ITokenService.cs](/Services/Interfaces/ITokenService.cs) | C# | 6 | 0 | 3 | 9 |
+| [Services/Interfaces/IUserService.cs](/Services/Interfaces/IUserService.cs) | C# | 12 | 0 | 3 | 15 |
+| [Services/MemberService.cs](/Services/MemberService.cs) | C# | 102 | 2 | 18 | 122 |
+| [Services/ProjectService.cs](/Services/ProjectService.cs) | C# | 208 | 7 | 29 | 244 |
+| [Services/ProjectTaskService.cs](/Services/ProjectTaskService.cs) | C# | 81 | 0 | 8 | 89 |
+| [Services/TokenService.cs](/Services/TokenService.cs) | C# | 33 | 0 | 5 | 38 |
+| [Services/UserService.cs](/Services/UserService.cs) | C# | 117 | 0 | 26 | 143 |
+| [appsettings.Development.json](/appsettings.Development.json) | JSON | 8 | 0 | 1 | 9 |
+| [appsettings.json](/appsettings.json) | JSON | 52 | 0 | 0 | 52 |
+| [bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json](/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json) | JSON | 171 | 0 | 0 | 171 |
+| [bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json](/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json) | JSON | 14 | 0 | 0 | 14 |
+| [bin/Debug/net10.0/appsettings.Development.json](/bin/Debug/net10.0/appsettings.Development.json) | JSON | 8 | 0 | 1 | 9 |
+| [bin/Debug/net10.0/appsettings.json](/bin/Debug/net10.0/appsettings.json) | JSON | 52 | 0 | 0 | 52 |
+| [bin/Debug/net10.0/mvc-dotnet.deps.json](/bin/Debug/net10.0/mvc-dotnet.deps.json) | JSON | 1,137 | 0 | 0 | 1,137 |
+| [bin/Debug/net10.0/mvc-dotnet.runtimeconfig.json](/bin/Debug/net10.0/mvc-dotnet.runtimeconfig.json) | JSON | 20 | 0 | 0 | 20 |
+| [bin/Debug/net10.0/mvc-dotnet.staticwebassets.endpoints.json](/bin/Debug/net10.0/mvc-dotnet.staticwebassets.endpoints.json) | JSON | 1 | 0 | 0 | 1 |
+| [docker-compose.yml](/docker-compose.yml) | YAML | 10 | 0 | 2 | 12 |
+| [mvc-dotnet.csproj](/mvc-dotnet.csproj) | XML | 27 | 0 | 4 | 31 |
+| [obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs](/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs) | C# | 3 | 1 | 1 | 5 |
+| [obj/Debug/net10.0/mvc-dotnet.AssemblyInfo.cs](/obj/Debug/net10.0/mvc-dotnet.AssemblyInfo.cs) | C# | 9 | 9 | 5 | 23 |
+| [obj/Debug/net10.0/mvc-dotnet.GeneratedMSBuildEditorConfig.editorconfig](/obj/Debug/net10.0/mvc-dotnet.GeneratedMSBuildEditorConfig.editorconfig) | Properties | 31 | 0 | 1 | 32 |
+| [obj/Debug/net10.0/mvc-dotnet.GlobalUsings.g.cs](/obj/Debug/net10.0/mvc-dotnet.GlobalUsings.g.cs) | C# | 16 | 1 | 1 | 18 |
+| [obj/Debug/net10.0/rjsmcshtml.dswa.cache.json](/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json) | JSON | 1 | 0 | 0 | 1 |
+| [obj/Debug/net10.0/rjsmrazor.dswa.cache.json](/obj/Debug/net10.0/rjsmrazor.dswa.cache.json) | JSON | 1 | 0 | 0 | 1 |
+| [obj/Debug/net10.0/rpswa.dswa.cache.json](/obj/Debug/net10.0/rpswa.dswa.cache.json) | JSON | 1 | 0 | 0 | 1 |
+| [obj/Debug/net10.0/staticwebassets.build.endpoints.json](/obj/Debug/net10.0/staticwebassets.build.endpoints.json) | JSON | 1 | 0 | 0 | 1 |
+| [obj/Debug/net10.0/staticwebassets.build.json](/obj/Debug/net10.0/staticwebassets.build.json) | JSON | 1 | 0 | 0 | 1 |
+| [obj/mvc-dotnet.csproj.nuget.dgspec.json](/obj/mvc-dotnet.csproj.nuget.dgspec.json) | JSON | 545 | 0 | 0 | 545 |
+| [obj/mvc-dotnet.csproj.nuget.g.props](/obj/mvc-dotnet.csproj.nuget.g.props) | XML | 23 | 0 | 0 | 23 |
+| [obj/mvc-dotnet.csproj.nuget.g.targets](/obj/mvc-dotnet.csproj.nuget.g.targets) | XML | 7 | 0 | 0 | 7 |
+| [obj/project.assets.json](/obj/project.assets.json) | JSON | 3,777 | 0 | 0 | 3,777 |
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
