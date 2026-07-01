@@ -22,7 +22,11 @@ public class UserService(IUserRepository userRepository, ITokenService tokenServ
             LastName = u.LastName,
             Email = u.Email,
             Role = u.Role,
-            IsActive = u.IsActive
+            IsActive = u.IsActive,
+            CreatedAt = u.CreatedAt,
+            LastLogin = u.LastLogin,
+            Token = tokenService.CreateToken(u)
+            
         });
     }
 
@@ -31,7 +35,7 @@ public class UserService(IUserRepository userRepository, ITokenService tokenServ
     {
         var user = await userRepository.GetUserByIdAsync(id);
         var now = DateTime.UtcNow;
-        if (user is null) throw new NotFoundException("User not found", id.ToString());
+        if (user is null) throw new NotFoundException("User not found at {now}", id.ToString());
 
         return new UserDto
         {
@@ -66,6 +70,7 @@ public class UserService(IUserRepository userRepository, ITokenService tokenServ
     {
         var user = await userRepository.LoginUserAsync(loginDto.Email, loginDto.Password);
         var now = DateTime.UtcNow;
+
         if (user is null) throw new NotFoundException("Invalid credentials", loginDto.Email);
 
 

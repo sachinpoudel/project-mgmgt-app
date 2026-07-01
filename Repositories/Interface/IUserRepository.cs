@@ -10,6 +10,6 @@ public interface IUserRepository
     Task<IEnumerable<User>> GetAllUsersAsync();
     Task<User?> GetUserByEmailAsync(string email);
     Task<User> RegisterUserAsync(string firstName, string lastName, string email, string password);
-    Task<User> LoginUserAsync(string email, string password);
+    Task<User?> LoginUserAsync(string email, string password);
     Task<bool> UpdateLastLoginAsync(Guid id);
 }

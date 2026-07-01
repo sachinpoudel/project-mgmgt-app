@@ -11,7 +11,7 @@ public class UserRepository(AppDbContext db, ILogger<UserRepository> logger) : I
     public async Task<IEnumerable<User>> GetAllUsersAsync()
     {
         logger.LogInformation("Fetching all users from the database.");
-        return await db.Users.ToListAsync();
+        return await db.Users.AsNoTracking().ToListAsync();
     }
 
     public async Task<User?> GetUserByIdAsync(Guid id)
@@ -21,20 +21,28 @@ public class UserRepository(AppDbContext db, ILogger<UserRepository> logger) : I
 
     public async Task<User?> GetUserByEmailAsync(string email)
     {
-         var user = await db.Users.FirstOrDefaultAsync(u => u.Email == email);
-        logger.LogInformation($"users", user);
+        var user = await db.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Email == email);
+        logger.LogInformation($"Fetching user by email: {email}");
         return user;
     }
 
 
-    public async Task<User> LoginUserAsync(string email, string password)
+    public async Task<User?> LoginUserAsync(string email, string password)
     {
+        using var transaction = await db.Database.BeginTransactionAsync();
         var user = await db.Users.FirstOrDefaultAsync(u => u.Email == email);
         if (user is null) return null;
 
         var hmac = new HMACSHA512(user.PasswordSalt);
         var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
         if (!computedHash.SequenceEqual(user.PasswordHash)) return null;
+
+
+
+
+        user.LastLogin = DateTime.UtcNow;
+        db.Users.Update(user);
+        await db.SaveChangesAsync();
 
         return user;
     }
@@ -45,7 +53,7 @@ public class UserRepository(AppDbContext db, ILogger<UserRepository> logger) : I
         var passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
         var passwordSalt = hmac.Key;
 
-        
+
 
         var newUser = new User
         {
@@ -80,6 +88,6 @@ public class UserRepository(AppDbContext db, ILogger<UserRepository> logger) : I
 
     public async Task<bool> ExistsUserAsync(Guid userId)
     {
-        return await db.Users.AnyAsync( u => u.Id == userId);
+        return await db.Users.AnyAsync(u => u.Id == userId);
     }
 }

@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
+using mvc_dotnet.Dtos.Auth;
 using mvc_dotnet.Exceptions;
 using mvc_dotnet.Services.Interfaces;
 
-namespace mvc_dotnet.Dtos.Auth;
+namespace mvc_dotnet.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
